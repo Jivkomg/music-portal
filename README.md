@@ -1,4 +1,19 @@
+# Music Portal
+
+Welcome to the Music Portal! This project is a web application that allows users to explore and purchase albums.
+
+## Table of Contents
+1. [Introduction](#introduction)
+2. [Project Structure](#project-structure)
+3. [Backend Overview](#backend-overview)
+4. [Frontend Overview](#frontend-overview)
+5. [Usage](#usage)
+
+## Introduction
+The Music Portal is a Spring Boot web application with Thymeleaf templates for server-side rendering. It provides functionalities for user registration, album exploration, purchasing albums, and managing user accounts.
+
 ## Project Structure
+The project structure consists of backend Java classes and frontend HTML templates:
 
 The Music Portal project is structured as follows:
 
@@ -27,4 +42,17 @@ The Music Portal project is structured as follows:
     - `registration.html`: Template for user registration form.
     - `user-account.html`: Template for displaying user account details including credit and purchased albums.
     - `recharge-page.html`: Template for recharging user account credit.
+   
+## Backend Overview
+The backend is built using Spring Boot and consists of controllers, services, repositories, and entity classes. Key functionalities include security configuration, album management, user registration, and user account management.
+
+## Frontend Overview
+Thymeleaf templates are used for server-side rendering of HTML pages. Templates include pages for album details, registration form, user account, and recharge page.
+
+## Usage
+To use the Music Portal:
+1. Run the Spring Boot application.
+2. Access the application via the browser at `http://localhost:8080`.
+
+
 For more information checkout the [Secure Software Template pdf](https://github.com/Jivkomg/music-portal/blob/main/Secure_Software_Template.pdf) file in the repository.
