@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${album.title} + ' - Album Details'"></title>
+</head>
+<body>
+
+<h2 th:text="${album.title}"></h2>
+<h3 th:text="${album.artist}"></h3>
+
+<ul>
+    <li th:each="song : ${album.songs}" th:text="${song}"></li>
+</ul>
+
+<p th:text="'Price: $' + ${album.price}"></p>
+
+<!-- Add logic to show download link or buy button based on user's ownership -->
+<a th:if="${/* Check if user has purchased the album */}" th:href="@{'/albums/download/' + ${album.id}}">Download Album</a>
+<a th:unless="${/* Check if user has purchased the album */}" th:href="@{'/albums/buy/' + ${album.id}}">Buy Album</a>
+
+</body>
+</html>
